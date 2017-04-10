@@ -47,7 +47,7 @@ name {
 }
 .bg1, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8 {
 	height: 100vh;
-	background-attachment: fixed! important;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
