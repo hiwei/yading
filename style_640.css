@@ -7,6 +7,7 @@ body {
 	background: none;
 	overflow-x: hidden;
 	color: #222;
+	height: 100vh;
 }
 a {
 	text-decoration: none;
@@ -20,6 +21,9 @@ name {
 }
 .bg1 {
 	background: url('img/640_bg.png');
+}
+.outer {
+	height: 100%;
 }
 .tab1 {
 	background: url('img/640_01.jpg');
@@ -46,7 +50,7 @@ name {
 	background: url('img/640_08.jpg');
 }
 .bg1, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8 {
-	min-height: 100vh;
+	height: 100%;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
