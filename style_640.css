@@ -7,6 +7,7 @@ body {
 	background: none;
 	overflow-x: hidden;
 	color: #222;
+	height: 100vh;
 }
 a {
 	text-decoration: none;
@@ -53,7 +54,7 @@ name {
 	background-attachment: fixed! important;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto 100%;
 }
 
 .nav, .title, .x, .bg2, .bg3, .bg4, .bg5, .bg6  {
