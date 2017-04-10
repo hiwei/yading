@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DaoChengYaDing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" media="not screen and (max-width: 640px)" href="style.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px) and (max-width: 640px)" href="style_640.css" />
+<script src="jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('.totop').on('click', function() {
+		$('html, body').animate({ scrollTop: 0 }, 1000);
+	});
+	if ($(window).width() > 640) {
+	var movementStrength_bg1 = 6;
+	var height_bg1 = movementStrength_bg1 / $(window).height();
+	var width_bg1 = movementStrength_bg1 / $(window).width();
+	$('body').mousemove(function(e){
+		if ( !$('.nav').hasClass('clicked') ) {
+			var pageX_bg1 = e.pageX - ($(window).width() / 2);
+			var pageY_bg1 = e.pageY - ($(window).height() / 2);
+			var newvalueX_bg1 = width_bg1 * pageX_bg1 * -1 - 6;
+			var newvalueY_bg1 = height_bg1 * pageY_bg1 * -1 - 12;
+			$('.bg1').css('background-position', newvalueX_bg1+'px     '+newvalueY_bg1+'px');
+		}
+	});
+	var movementStrength_bg4 = 3;
+	var height_bg4 = movementStrength_bg4 / $(window).height();
+	var width_bg4 = movementStrength_bg4 / $(window).width();
+	$('body').mousemove(function(e){
+		if ( !$('.nav').hasClass('clicked') ) {
+			var pageX_bg4 = e.pageX - ($(window).width() / 2);
+			var pageY_bg4 = e.pageY - ($(window).height() / 2);
+			var newvalueX_bg4 = width_bg4 * pageX_bg4 * 1 - 3;
+			var newvalueY_bg4 = height_bg4 * pageY_bg4 * 1 - 6;
+			$('.bg4').css('background-position', newvalueX_bg4+'px     '+newvalueY_bg4+'px');
+		}
+	});
+	var movementStrength_bg6 = 5;
+	var height_bg6 = movementStrength_bg6 / $(window).height();
+	var width_bg6 = movementStrength_bg6 / $(window).width();
+	$('body').mousemove(function(e){
+		if ( !$('.nav').hasClass('clicked') ) {
+			var pageX_bg6 = e.pageX - ($(window).width() / 2);
+			var pageY_bg6 = e.pageY - ($(window).height() / 2);
+			var newvalueX_bg6 = width_bg6 * pageX_bg6 * 1 - 5;
+			var newvalueY_bg6 = height_bg6 * pageY_bg6 * -1 - 10;
+			$('.bg6').css('background-position', newvalueX_bg6+'px     '+newvalueY_bg6+'px');
+		}
+	});
+	$('.nav a').on('click',  function() {
+		var show_tab = $(this).data('tab');
+		$('.tab' + show_tab).delay(1500).fadeIn();
+		$('.bg3').addClass('clicked');
+		$('.bg1, .bg2, .bg4, .bg6, .nav').addClass('clicked');
+		$('.title').fadeOut(1000);
+		$('.white').delay(1000).fadeIn(1000);
+		setTimeout(function(){
+			$('.outer, .bg5').addClass('clicked');
+		}, 1000);
+	});
+	$('.white, .x').on('click', function() {
+		$('.tab').fadeOut(500);
+		$('.white').fadeOut(1000);
+		$('.title').delay(2000).fadeIn(1000);
+		setTimeout(function(){
+			$('.outer').removeClass('clicked');
+		}, 500);
+		setTimeout(function(){
+			$('.bg1, .bg2, .bg4, .bg5, .bg6').removeClass('clicked');
+		}, 800);
+		// mousemove disabled (prevent lag)
+		setTimeout(function(){
+			$('.nav').removeClass('clicked');
+		}, 3000);
+	});
+	}
+});
+</script>
+
+</head>
+<body>
+<div class="bg1"></div>
+<div class="bg2"></div>
+<div class="bg3"></div>
+<div class="bg4"></div>
+<div class="bg5"></div>
+<div class="bg6"></div>
+
+<div class="title">
+	<span>稻城亞丁</span>
+	<br>
+	<br>
+	<span>　　最後的香格里拉</span>
+</div>
+
+<div class="nav">
+	<a data-tab="1">關於</a><a data-tab="2">仙乃日神山</a><a data-tab="3">央邁勇神山</a><a data-tab="4">夏諾多吉神山</a><a data-tab="5">牛奶海</a><a data-tab="6">五色海</a><a data-tab="7">地圖</a><a data-tab="8">資訊</a>
+</div>
+
+<div class="white"></div>
+<div class="outer">
+	<div class="tab tab1">
+		<span class="x">╳</span>
+		<section>
+			　　最早發現稻城亞丁的是美國傳教士瑟夫洛克，一九二八年並把所拍到的照片發表在《國家地理雜誌》上，且引起了巨大轟動。<br />
+			<br />
+			　　亞丁主要由仙乃日、央邁勇、夏諾多吉三座神山，和周圍的河流、湖泊和高山草甸組成，它的景致保持著在地球上幾乎絕跡的純粹，被譽為最後的香格里拉、水藍色星球上的最後一片淨土。<br />
+			<br />
+			網站部分圖片來自：<a href="https://tuchong.com/411686/12728272/" target="_blank">1</a>、<a href="https://jocscrapbook.wordpress.com/" target="_blank">2</a>、<a href="http://www.weceping.com/accessories/meitu/wallpapers/fj/177.html" target="_blank">3</a>、<a href="http://www.flyhorse.com.tw/" target="_blank">4</a>
+		</section>
+	</div>
+	<div class="tab tab2">
+		<span class="x">╳</span>
+		<section>
+			<name>仙乃日神山</name>
+			峰名意為「觀世音菩薩」，是亞丁景區三大高峰之首，海拔 6032 米。山形如一尊慈善安祥的大佛，端座在蓮花台上。前面的山是金剛亥母，左邊金字塔般的山峰是白度母，右邊則是綠度母，旁邊林立的角峰是降香母和妙音仙女。傳說她們彈奏著天籟之音，傳到了仙乃日背後的地獄谷中，讓地獄中的罪人聽到仙律能幡然悔悟，早日脫離苦海。
+		</section>
+	</div>
+	<div class="tab tab3">
+		<span class="x">╳</span>
+		<section>
+			<name>央邁勇神山</name>
+			藏語意為「文殊菩薩」，在佛教中排在三怙主雪山之首，海拔 5958 米。雪峰像文殊師利用手中的智慧之俞直指蒼穹，當年洛克先生望見了央邁勇神山，被她高貴的氣質懾服，在他的日記中寫到：她是我見到世界上最美的山峰！
+		</section>
+	</div>
+	<div class="tab tab4">
+		<span class="x">╳</span>
+		<section>
+			<name>夏諾多吉神山</name>
+			藏語意為「金剛手菩薩」，在三怙主雪山佛位第三，海拔 5958 米。夏諾多吉山峰矗立於天地之間，他勇猛的剛烈、神采奕奕，洛克先生把她比喻成希臘神話中的雷神，而神山腳下的洛絨牛場是當年洛克先生宿營處。
+		</section>
+	</div>
+	<div class="tab tab5">
+		<span class="x">╳</span>
+		<section>
+			<name>牛奶海</name>
+			藏語為「俄絨措」，傳說每年春暖花開之時，海水會像牛奶一樣潔白如瓊漿，並因此而得名。牛奶海為古冰川湖，狀如水滴，四周雪山環繞，湖水清瑩碧藍，山止成瀑。牛奶海在央邁勇的山坳裡，海拔約為 4600 米，為四川亞丁地區的聖湖之一。
+		</section>
+	</div>
+	<div class="tab tab6">
+		<span class="x">╳</span>
+		<section>
+			<name>五色海</name>
+			藏語為「丹增措」，位於仙乃日與央邁勇神山之間，海拔 4600 米。由於光的折射，會產生五種不同的顏色，也因此而得名。走進五色海，湖面一片迷離，讓人恍如踏進夢境。五色海是藏區著名的聖湖，傳說能返演歷史，預測未來。
+		</section>
+	</div>
+	<div class="tab tab7">
+		<span class="x">╳</span>
+	</div>
+	<div class="tab tab8">
+		<span class="x">╳</span>
+		<section>
+			<name>門票及時間</name>
+			270 RMB，07:00 - 18:30。<br>
+			<br>
+			<name>住宿建議</name>
+			一般集中於入口處的香格里拉鎮，海拔約 2880 米；<br>
+			以及景區內的亞丁村，海拔約 3740 米。<br>
+			<br>
+			<name>景區外交通</name>
+			從稻城縣拼車或包車前往香格里拉鎮即可。<br>
+			<br>
+			<name>景區內交通</name>
+			觀光車往返於景區入口和沖古寺間；<br>
+			電瓶車往返於沖古寺及洛絨牛場間，需另外購買。<br>
+			<br>
+			<name>旅遊建議</name>
+			一般分為短線及長線。<br>
+			短線：亞丁村 - 沖古寺 - 珍珠海 - 返回。<br>
+			長線：亞丁村 - 洛絨牛場 - 牛奶海 - 五色海 - 返回。<br>
+		</section>
+		<div class="totop">
+		<br><br><br><br><br>
+		↑
+		<br><br><br><br><br>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

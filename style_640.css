@@ -1,0 +1,68 @@
+@import url(notosanstc.css);
+@import url(cwtexfangsong.css);
+body {
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	background: none;
+	overflow-x: hidden;
+	color: #222;
+}
+a {
+	text-decoration: none;
+	color: #05535A;
+}
+name {
+	display: block;
+	color: #05535A;
+	font-size: 14pt;
+	line-height: 25pt;
+}
+.bg1 {
+	background: url('img/640_bg.png');
+}
+.tab1 {
+	background: url('img/640_01.jpg');
+}
+.tab2 {
+	background: url('img/640_02.jpg');
+}
+.tab3 {
+	background: url('img/640_03.jpg');
+}
+.tab4 {
+	background: url('img/640_04.jpg');
+}
+.tab5 {
+	background: url('img/640_05.jpg');
+}
+.tab6 {
+	background: url('img/640_06.jpg');
+}
+.tab7 {
+	background: url('img/640_07.svg');
+}
+.tab8 {
+	background: url('img/640_08.jpg');
+}
+.bg1, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8 {
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav, .title, .x, .bg2, .bg3, .bg4, .bg5, .bg6  {
+	display: none;
+}
+.tab section {
+	width: 80%;
+	padding: 10%;
+	background: rgba(255,255,255,0.7);
+}
+.totop {
+	width: 100%;
+	font-size: 20pt;
+	text-align: center;
+}
