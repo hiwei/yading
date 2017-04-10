@@ -267,3 +267,102 @@ name {
 .totop {
 	display: none;
 }
+@media screen and (min-width: 1441px) and (max-width: 1680px) {
+	body, .tab1 section, .title {
+		font-size: 16pt;
+	}
+	name, .x {
+		font-size: 24pt;
+		line-height: 35pt;
+	}
+	.outer {
+		width: 560px;
+		height: 240px;
+	}
+	.title {
+		width: 560px;
+		height: 160px;
+	}
+	.title :nth-child(1) {
+		font-size: 60pt;
+	}
+	.title :nth-child(2) {
+		display: none;
+	}
+	.title :nth-child(4) {
+		font-size: 14pt;
+	}
+	.title :nth-child(4)::before {
+		width: 150px;
+		margin-bottom: 6px;
+	}
+	.tab {
+		font-size: 12pt;
+	}
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+	body, .tab1 section, .title {
+		font-size: 15pt;
+	}
+	name, .x {
+		font-size: 22pt;
+		line-height: 30pt;
+	}
+	.outer {
+		width: 490px;
+		height: 210px;
+	}
+	.title {
+		width: 490px;
+		height: 140px;
+	}
+	.title :nth-child(1) {
+		font-size: 50pt;
+	}
+	.title :nth-child(2) {
+		display: none;
+	}
+	.title :nth-child(4) {
+		font-size: 14pt;
+	}
+	.title :nth-child(4)::before {
+		width: 100px;
+		margin-bottom: 6px;
+	}
+	.tab {
+		font-size: 11pt;
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 1280px) {
+	body, .tab1 section, .title {
+		font-size: 12pt;
+	}
+	name, .x {
+		font-size: 18pt;
+		line-height: 25pt;
+	}
+	.outer {
+		width: 350px;
+		height: 150px;
+	}
+	.title {
+		width: 350px;
+		height: 100px;
+	}
+	.title :nth-child(1) {
+		font-size: 35pt;
+	}
+	.title :nth-child(2) {
+		display: none;
+	}
+	.title :nth-child(4) {
+		font-size: 12pt;
+	}
+	.title :nth-child(4)::before {
+		width: 50px;
+		margin-bottom: 6px;
+	}
+	.tab {
+		font-size: 9pt;
+	}
+}
