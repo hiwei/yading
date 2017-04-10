@@ -50,7 +50,7 @@ name {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .nav, .title, .x, .bg2, .bg3, .bg4, .bg5, .bg6  {
