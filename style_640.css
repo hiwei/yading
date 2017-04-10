@@ -1,7 +1,7 @@
 @import url(notosanstc.css);
 @import url(cwtexfangsong.css);
 body {
-	font-size: 10pt;
+	font-size: 12pt;
 	margin: 0;
 	padding: 0;
 	background: none;
@@ -16,8 +16,8 @@ a {
 name {
 	display: block;
 	color: #05535A;
-	font-size: 14pt;
-	line-height: 25pt;
+	font-size: 16pt;
+	line-height: 30pt;
 }
 .bg1 {
 	background: url('img/640_bg.png');
@@ -26,33 +26,33 @@ name {
 	height: 100%;
 }
 .tab1 {
-	background: url('img/01.jpg');
+	background: url('img/640_01.jpg');
 }
 .tab2 {
-	background: url('img/02.jpg');
+	background: url('img/640_02.jpg');
 }
 .tab3 {
-	background: url('img/03.jpg');
+	background: url('img/640_03.jpg');
 }
 .tab4 {
-	background: url('img/04.jpg');
+	background: url('img/640_04.jpg');
 }
 .tab5 {
-	background: url('img/05.jpg');
+	background: url('img/640_05.jpg');
 }
 .tab6 {
-	background: url('img/06.jpg');
+	background: url('img/640_06.jpg');
 }
 .tab7 {
-	background: url('img/07.svg');
+	background: url('img/640_07.svg');
 }
 .tab8 {
-	background: url('img/08.jpg');
+	background: url('img/640_08.jpg');
 }
 .bg1, .tab1, .tab2, .tab3, .tab4, .tab5, .tab6, .tab7, .tab8 {
 	height: 100%;
-	background-attachment: fixed;
-	background-position: center center;
+	background-attachment: fixed! important;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -67,6 +67,6 @@ name {
 }
 .totop {
 	width: 100%;
-	font-size: 20pt;
+	font-size: 30pt;
 	text-align: center;
 }
