@@ -145,11 +145,11 @@ name {
 	font-family: noto sans tc;
 	text-shadow: 2px 2px 0px #fff;
 }
-.title :nth-child(4) {
+.title :nth-child(3) {
 	font-size: 18pt;
 	font-family: cwTeXFangSong;
 }
-.title :nth-child(4)::before {
+.title :nth-child(3)::before {
 	display: inline-block;
 	content: '';
 	border-bottom: 1px #FF6469 solid;
@@ -286,13 +286,10 @@ name {
 	.title :nth-child(1) {
 		font-size: 60pt;
 	}
-	.title :nth-child(2) {
-		display: none;
-	}
-	.title :nth-child(4) {
+	.title :nth-child(3) {
 		font-size: 14pt;
 	}
-	.title :nth-child(4)::before {
+	.title :nth-child(3)::before {
 		width: 150px;
 		margin-bottom: 6px;
 	}
@@ -319,13 +316,10 @@ name {
 	.title :nth-child(1) {
 		font-size: 50pt;
 	}
-	.title :nth-child(2) {
-		display: none;
-	}
-	.title :nth-child(4) {
+	.title :nth-child(3) {
 		font-size: 14pt;
 	}
-	.title :nth-child(4)::before {
+	.title :nth-child(3)::before {
 		width: 100px;
 		margin-bottom: 6px;
 	}
@@ -352,13 +346,10 @@ name {
 	.title :nth-child(1) {
 		font-size: 35pt;
 	}
-	.title :nth-child(2) {
-		display: none;
-	}
-	.title :nth-child(4) {
+	.title :nth-child(3) {
 		font-size: 12pt;
 	}
-	.title :nth-child(4)::before {
+	.title :nth-child(3)::before {
 		width: 50px;
 		margin-bottom: 6px;
 	}
